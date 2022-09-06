@@ -13,4 +13,20 @@
     <string name="hello_world">Hola mundo desde archivo string</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Strings for calculator-->
+    <string name="number_1">Número 1</string>
+    <string name="number_2">Número 2</string>
+    <string name="calculate">Calcular</string>
+    <string name="sum">Suma</string>
+    <string name="substract">Resta</string>
+    <string name="divide">Dividir</string>
+    <string name="multiply">Multiplicar</string>
+    <string name="none">Ninguno</string>
+    <string name="result">Resultado</string>
+
+
+
+
+
 </resources>
