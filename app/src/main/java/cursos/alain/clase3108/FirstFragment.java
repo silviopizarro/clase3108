@@ -92,6 +92,16 @@ public class FirstFragment extends Fragment {
 
             if(checkBox_sum.isChecked() && checkBox_sub.isChecked() && checkBox_mul.isChecked() && checkBox_div.isChecked()) {
                 mensajeResultado();
+            }else if(checkBox_sum.isChecked() && checkBox_sub.isChecked() && checkBox_mul.isChecked()) {
+                resSumSubMul();
+            }else if(checkBox_sum.isChecked() && checkBox_mul.isChecked() && checkBox_div.isChecked()) {
+                resSumMulDiv();
+            }else if(checkBox_sum.isChecked() && checkBox_sub.isChecked() && checkBox_div.isChecked()) {
+                resSumSubDiv();
+            }else if(checkBox_sum.isChecked() && checkBox_sub.isChecked() && checkBox_mul.isChecked()) {
+                resSumSubMul();
+            }else if(checkBox_sub.isChecked() && checkBox_mul.isChecked() && checkBox_div.isChecked()){
+                resSubMulDiv();
             }else if(checkBox_sum.isChecked() && checkBox_sub.isChecked()) {
                 resSumYSub();
             }else if(checkBox_sum.isChecked() && checkBox_mul.isChecked()) {
@@ -202,6 +212,52 @@ public class FirstFragment extends Fragment {
         String valDiv = div();
 
         String resultado = "Multiplicación = "+valMul+ "\nDivisión = "+valDiv;
+        txt_respuesta.setText(resultado);
+        return resultado;
+
+    }
+
+    public String resSumSubMul(){
+        String valSum = sum();
+        String valSub = sub();
+        String valMul = multiply();
+
+        String resultado = "Suma = "+valSum+ ", resta = "+valSub+ ", multiplicación = "+valMul;
+        txt_respuesta.setText(resultado);
+        return resultado;
+
+    }
+
+    public String resSubMulDiv(){
+        String valSub = sub();
+        String valMul = multiply();
+        String valDiv = div();
+
+        String resultado = "Resta = "+valSub+ ", multiplicación = "+valMul+ ", división = "+valDiv;
+        txt_respuesta.setText(resultado);
+        return resultado;
+
+    }
+
+    public String resSumMulDiv(){
+        String valSum = sum();
+        String valMul = multiply();
+        String valDiv = div();
+
+        String resultado = "Suma = "+valSum+ ", multiplicación = "+valMul+ ", división = "+valDiv;
+        txt_respuesta.setText(resultado);
+        return resultado;
+
+    }
+
+    public String resSumSubDiv(){
+
+        String resultado = "";
+        String valSum = sum();
+        String valSub = sub();
+        String valDiv = div();
+
+        resultado = "Suma = "+valSum+ ", resta = "+valSub+ ", división = "+valDiv;
         txt_respuesta.setText(resultado);
         return resultado;
 
