@@ -251,13 +251,11 @@ public class FirstFragment extends Fragment {
     }
 
     public String resSumSubDiv(){
-
-        String resultado = "";
         String valSum = sum();
         String valSub = sub();
         String valDiv = div();
 
-        resultado = "Suma = "+valSum+ ", resta = "+valSub+ ", división = "+valDiv;
+        String resultado = "Suma = "+valSum+ ", resta = "+valSub+ ", división = "+valDiv;
         txt_respuesta.setText(resultado);
         return resultado;
 
